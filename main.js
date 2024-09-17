@@ -43,8 +43,8 @@ const map = L.map('map').setView([50.0849, 19.9718], 15);
 // STYLING MAP
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 	maxZoom: 19,
-	attribution:
-		'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> & <a href="https://carto.com/">CartoDB</a>',
+	// attribution:
+	// 	'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> & <a href="https://carto.com/">CartoDB</a>',
 }).addTo(map);
 
 // CREATING CUSTOM ICON & SETTING POPUP
@@ -59,6 +59,6 @@ const customIcon = L.icon({
 const marker = L.marker([50.0849, 19.9718], { icon: customIcon }).addTo(map);
 marker
 	.bindPopup(
-		'<b>Hello! Tu jesteśmy</b><br>Concrete CAFFE & BAKERY<hr>ul.Majowa 5, Kraków<br>tel. 888 999 777<br>Codziennie 6 - 17'
+		'<b>Hello! Tu jesteśmy</b><br>Concrete CAFFE & BAKERY<hr>Codziennie 6 - 17'
 	)
 	.openPopup();
