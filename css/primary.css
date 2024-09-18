@@ -1173,6 +1173,7 @@ body {
 	.ccm-page .cards .border-box .extra-border {
 		width: 250%;
 		fill: black;
+		filter: none !important;
 	}
 	.ccm-page #testi {
 		padding-top: 180px;
@@ -1389,6 +1390,7 @@ body {
 @media (prefers-color-scheme: dark) {
 	.ccm-page #testi .border-box .extra-border,
 	.ccm-page .cards .border-box .extra-border {
-		fill: black;
+		fill: black !important;
+    stroke: black !important;
 	}
   }
