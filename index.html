@@ -12,52 +12,6 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="generator" content="Concrete CMS">
 
-    <style type="text/css" data-area-style-area-handle="Main" data-block-style-block-id="158" data-style-set="4">
-        .ccm-custom-style-container.ccm-custom-style-main-158 {
-            background-color: rgba(49, 196, 193, 1);
-            padding-top: 30px;
-            padding-right: 41px;
-            padding-bottom: 38px;
-            padding-left: 47px;
-            border-width: 73px;
-            border-radius: 123px;
-            -moz-border-radius: 123px;
-            -webkit-border-radius: 123px;
-            -o-border-radius: 123px;
-            -ms-border-radius: 123px
-        }
-    </style>
-    <style type="text/css" data-area-style-area-handle="Aboutleft" data-block-style-block-id="270" data-style-set="31">
-        .ccm-custom-style-container.ccm-custom-style-aboutleft-270 {
-            padding-bottom: 40px
-        }
-    </style>
-    <style type="text/css" data-area-style-area-handle="Headerimg" data-block-style-block-id="275" data-style-set="18">
-        .ccm-custom-style-container.ccm-custom-style-headerimg-275 {
-            background-color: rgba(230, 27, 27, 1);
-            font-size: 25px;
-            color: rgba(255, 255, 255, 1);
-            text-align: center
-        }
-    </style>
-    <style type="text/css" data-area-style-area-handle="Navigation" data-block-style-block-id="193" data-style-set="9">
-        .ccm-custom-style-container.ccm-custom-style-navigation-193 {
-            background-color: rgba(0, 0, 0, 0);
-            color: rgba(255, 255, 255, 1);
-            color: #ffa500;
-            text-align: left
-        }
-
-        .ccm-custom-style-container.ccm-custom-style-navigation-193 a {
-            color: rgba(255, 255, 255, 1) !important
-        }
-    </style>
-    <style type="text/css" data-area-style-area-handle="Navigation" data-style-set="11">
-        .ccm-custom-style-navigation {
-            background-color: rgba(255, 255, 255, 1)
-        }
-    </style>
-
     <link rel="icon" href="./img/faviconConcrete.png">
     <link href="./css/frontend_002.css" rel="stylesheet" type="text/css" media="all">
     <link href="./css/frontend_003.css" rel="stylesheet" type="text/css" media="all">
@@ -73,63 +27,78 @@
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 
 
-    <title>ConcreteCaffee - Caffe & Bakery</title>
+    <title>ConcreteCoffee - Caffe & Bakery</title>
 </head>
 
 <body>
     <div class="ccm-page ccm-page-id-1 page-type-page page-template-full ccm-production-mode-development">
         <div id="body-content">
-            <!-- =============== HERO IMG - HEADER =============== -->
-            <div class="ccm-custom-style-container ccm-custom-style-headerimg-275 heroImg">
-                <div data-transparency="element" class="ccm-block-hero-image" style="min-height: 78vh">
-                    <div class="ccm-block-hero-image-cover" style="min-height: 78vh"></div>
-                    <div style="background-image: url('./img/headerimg.png'); min-height: 78vh"
-                        class="ccm-block-hero-image-image"></div>
-                    <div class="ccm-block-hero-image-text" style="min-height: 78vh">
-                        <h1>Concrete</h1>
-                        <p>COFFEE &amp; BAKERY</p>
+            <!-- =============== HEADER =============== -->
+            <header>
+                <!-- =============== TOP BAR =============== -->
+                <div id="top-bar">
+                    <div class="top-bar-box max-block-width">
+                        <div class="logo-mini-box">
+                            <a href="#body-content" class="logo-mini-link" type="button">Cc</a>
+                        </div>
 
                         <!-- =============== NAV =============== -->
-                        <div class="max-block-width">
-                            <ol class="main-nav-list">
-                                <li><a class="main-nav-item" href="#about" target="_blank">Poznaj nas</a></li>
-                                <li><a class="main-nav-item" href="#menu" target="_blank">Menu</a></li>
-                                <li><a class="main-nav-item" href="#testi" target="_blank">Opinie</a></li>
-                                <li><a class="main-nav-item" href="#contact" target="_blank">Kontakt</a></li>
-                            </ol>
+                        <div id="nav-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
+                        <nav class="nav">
+                            <ol class="main-nav-list">
+                                <li><a class="main-nav-item" href="#about">Poznaj nas</a></li>
+                                <li><a class="main-nav-item" href="#menu">Menu</a></li>
+                                <li><a class="main-nav-item" href="#testi">Opinie</a></li>
+                                <li><a class="main-nav-item" href="#contact">Kontakt</a></li>
+                            </ol>
+                        </nav>
+
+                        <a href="#map" class="header-btn header-btn-first">Dojazd</a>
+                        <div class="socials">
+                            <a href="http://twitter.com/" class="socials-icon" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="#000" stroke="#000" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-twitter">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                    </path>
+                                </svg></a>
+                            <a href="http://facebook.com/" class="socials-icon" style="margin-inline: 20px;"
+                                target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="#000" stroke="#000" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg></a>
+                            <a href="http://instagram.com/" class="socials-icon" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="#000" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-instagram">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg></a>
+                        </div>
+
                     </div>
                 </div>
-            </div>
-            <!-- =============== TOP BAR - HEADER =============== -->
-            <header class="max-block-width">
-                <!-- <div class="header-overlay"></div> -->
-                <div id="top-bar">
-                    <p class="text">ul. Majowa 5, Kraków</p>
-                    <div class="socials">
-                        <a href="http://twitter.com/" class="socials-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-twitter">
-                                <path
-                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                </path>
-                            </svg></a>
-                        <a href="http://facebook.com/" class="socials-icon" style="margin-inline: 20px;"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-facebook">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                            </svg></a>
-                        <a href="http://instagram.com/" class="socials-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                            </svg></a>
+                <!-- =============== HERO IMG =============== -->
+                <div class="ccm-custom-style-container ccm-custom-style-headerimg-275 heroImg">
+                    <div data-transparency="element" class="ccm-block-hero-image" style="min-height: 78vh">
+                        <div class="ccm-block-hero-image-cover" style="min-height: 78vh"></div>
+                        <div style="background-image: url('./img/herobg2.jpg'); min-height: 78vh"
+                            class="ccm-block-hero-image-image"></div>
+                        <div class="ccm-block-hero-image-text" style="min-height: 78vh">
+                            <h1>Concrete</h1>
+                            <p>COFFEE &amp; BAKERY</p>
+                            <p>Zacznij konkretnie dzień!</p>
+                            <a href="#map" class="header-btn header-btn-second">Dojazd</a>
+                        </div>
                     </div>
-                    <p class="text">otwarte 6 - 17</p>
                 </div>
             </header>
 
@@ -426,37 +395,40 @@
                         <h3>Concrete</h3>
                         <p>COFFEE & BAKERY</p>
                     </div>
-                    <ol class="main-nav-list">
-                        <li><a class="main-nav-item" href="#about">Poznaj nas</a></li>
-                        <li><a class="main-nav-item" href="#menu">Menu</a></li>
-                        <li><a class="main-nav-item" href="#testi">Opinie</a></li>
-                        <li><a class="main-nav-item" href="#contact">Kontakt</a></li>
-                    </ol>
+                    <!-- =============== NAV =============== -->
+                    <nav>
+                        <ol class="main-nav-list">
+                            <li><a class="main-nav-item" href="#about">Poznaj nas</a></li>
+                            <li><a class="main-nav-item" href="#menu">Menu</a></li>
+                            <li><a class="main-nav-item" href="#testi">Opinie</a></li>
+                            <li><a class="main-nav-item" href="#contact">Kontakt</a></li>
+                        </ol>
+                    </nav>
                     <div class="socials">
-                        <a href="http://twitter.com/" class="socials-icon">
+                        <a href="http://twitter.com/" class="socials-icon" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
+                                fill="#ffffff" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-twitter">
                                 <path
                                     d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
                                 </path>
                             </svg></a>
-                        <a href="http://facebook.com/" class="socials-icon" style="margin-inline: 20px;"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="#ffffff" stroke="#ffffff" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-facebook">
+                        <a href="http://facebook.com/" class="socials-icon" style="margin-inline: 20px;"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="#ffffff" stroke="#ffffff" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg></a>
-                        <a href="http://instagram.com/" class="socials-icon"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                        <a href="http://instagram.com/" class="socials-icon" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-instagram">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                             </svg></a>
                     </div>
                 </div>
-                <hr>
                 <p>Copyright 2024, Kamila</p>
             </footer>
         </div>

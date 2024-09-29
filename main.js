@@ -3,9 +3,29 @@
 const menuItems = document.querySelectorAll('.menu-item');
 const price = document.querySelectorAll('.price');
 const circleText = document.querySelector('.circle .text');
+const burgerBtn = document.querySelector('#nav-burger');
+const headerNav = document.querySelector('.nav');
+const headerNavItems = document.querySelectorAll('#top-bar .main-nav-item')
 let root = document.documentElement;
 
-// DOTS IN MENU ITEM
+
+// BURGER BTN ANIMATION HANDLE
+
+burgerBtn.addEventListener('click', (e) => {
+	if (e.target !== burgerBtn) return;
+	burgerBtn.classList.toggle('open');
+	headerNav.classList.toggle('open')
+});
+
+// CLOSING NAV MENU AFTER CHOICE
+
+headerNav.addEventListener('click', e => {
+	if (!e.target.classList.contains('main-nav-item')) return;
+	burgerBtn.classList.toggle('open');
+	headerNav.classList.toggle('open')
+})
+
+// DOTS IN MENU ITEM IN MENU SECTION
 menuItems.forEach((item, i) => {
 	if (i === 0) {
 		item.parentElement.innerText =
