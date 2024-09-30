@@ -5,25 +5,39 @@ const price = document.querySelectorAll('.price');
 const circleText = document.querySelector('.circle .text');
 const burgerBtn = document.querySelector('#nav-burger');
 const headerNav = document.querySelector('.nav');
-const headerNavItems = document.querySelectorAll('#top-bar .main-nav-item')
+const headerNavItems = document.querySelectorAll('#top-bar .main-nav-item');
+const miniLogo = document.querySelector('.logo-mini-link');
 let root = document.documentElement;
-
 
 // BURGER BTN ANIMATION HANDLE
 
 burgerBtn.addEventListener('click', (e) => {
 	if (e.target !== burgerBtn) return;
 	burgerBtn.classList.toggle('open');
-	headerNav.classList.toggle('open')
+	headerNav.classList.toggle('open');
+});
+
+// CLOSING NAV MENU AFTER ITEM CHOICE / MINI LOGO CLICK
+
+headerNav.addEventListener('click', (e) => {
+	if (!e.target.classList.contains('main-nav-item')) return;
+	burgerBtn.classList.toggle('open');
+	headerNav.classList.toggle('open');
+});
+
+miniLogo.addEventListener('click', (e) => {
+	if (!e.target.classList.contains('logo-mini-link')) return;
+	burgerBtn.classList.remove('open');
+	headerNav.classList.remove('open');
 });
 
 // CLOSING NAV MENU AFTER CHOICE
 
-headerNav.addEventListener('click', e => {
+headerNav.addEventListener('click', (e) => {
 	if (!e.target.classList.contains('main-nav-item')) return;
 	burgerBtn.classList.toggle('open');
-	headerNav.classList.toggle('open')
-})
+	headerNav.classList.toggle('open');
+});
 
 // DOTS IN MENU ITEM IN MENU SECTION
 menuItems.forEach((item, i) => {

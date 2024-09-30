@@ -1140,9 +1140,9 @@ body {
 		position: absolute;
 		bottom: -220px;
 		background: linear-gradient(
-			260deg,
-			rgba(0, 0, 0, 1) 42%,
-			rgba(255, 255, 255, 0) 95%
+			270deg,
+			rgba(0, 0, 0, 0.8) 31%,
+			rgba(255, 255, 255, 0) 90%
 		);
 		z-index: 10;
 	}
