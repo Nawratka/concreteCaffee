@@ -20,23 +20,17 @@ burgerBtn.addEventListener('click', (e) => {
 // CLOSING NAV MENU AFTER ITEM CHOICE / MINI LOGO CLICK
 
 headerNav.addEventListener('click', (e) => {
-	if (!e.target.classList.contains('main-nav-item')) return;
-	burgerBtn.classList.toggle('open');
-	headerNav.classList.toggle('open');
+	if (e.target.classList.contains('main-nav-item')) {
+		burgerBtn.classList.toggle('open');
+		headerNav.classList.toggle('open');
+	}
+	return;
 });
 
 miniLogo.addEventListener('click', (e) => {
 	if (!e.target.classList.contains('logo-mini-link')) return;
 	burgerBtn.classList.remove('open');
 	headerNav.classList.remove('open');
-});
-
-// CLOSING NAV MENU AFTER CHOICE
-
-headerNav.addEventListener('click', (e) => {
-	if (!e.target.classList.contains('main-nav-item')) return;
-	burgerBtn.classList.toggle('open');
-	headerNav.classList.toggle('open');
 });
 
 // DOTS IN MENU ITEM IN MENU SECTION
