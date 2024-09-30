@@ -285,7 +285,7 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-.ccm-page footer ol {
+.ccm-page footer ul {
 	margin: 35px auto;
 	display: flex;
 	justify-content: center;
@@ -437,6 +437,9 @@ body {
 	padding-top: 7px;
 	display: flex;
 }
+.ccm-page footer .socials {
+	padding-top: 0;
+}
 .ccm-page .ccm-block-hero-image {
 	overflow: hidden;
 }
@@ -494,7 +497,11 @@ body {
 }
 .ccm-page .about-box .about-left {
 	width: 50%;
+	text-align: left;
 	z-index: 1;
+}
+.ccm-page .about-box .about-left blockquote {
+	margin: 20px auto 0;
 }
 .ccm-page .about-box .about-right {
 	position: relative;
@@ -684,7 +691,7 @@ body {
 	align-content: center;
 	margin-top: 55px;
 }
-.ccm-page #menu .menu-box ol {
+.ccm-page #menu .menu-box ul {
 	width: 340px;
 	margin-bottom: 40px;
 }
@@ -1146,7 +1153,7 @@ body {
 		);
 		z-index: 10;
 	}
-	.ccm-page .main-nav-list {
+	.ccm-page #top-bar .main-nav-list {
 		flex-direction: column;
 		align-items: end;
 	}
@@ -1252,6 +1259,12 @@ body {
 		margin-bottom: 0;
 	}
 }
+@media (max-width: 470px) {
+	.ccm-page footer ul {
+		flex-wrap: wrap;
+	}
+}
+
 @media (max-width: 375px) {
 	.ccm-page .card .card1::after,
 	.ccm-page .card .card2::after,
@@ -1279,6 +1292,12 @@ body {
 	}
 	.ccm-page #map {
 		height: 300px;
+	}
+	.ccm-page footer .main-nav-list {
+		width: 300px;
+	}
+	.ccm-page footer .main-nav-list li {
+		width: 50%;
 	}
 }
 @media (max-width: 320px) {

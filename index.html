@@ -2,32 +2,39 @@
 <html lang="pl">
 
 <head>
+    <title>Concrete | Najlepsza Kawa w Krakowie</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-    <title>ConcreteCaffee - Caffe & Bakery</title>
-
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta name="generator" content="Concrete CMS">
 
+    <meta name="generator" content="Concrete CMS">
+    <meta name="description"
+        content="Szukasz idealnej kawiarni? Concrete Coffee oferuje najlepsze kawy i pyszne desery w przytulnej atmosferze. Sprawdź nasze menu już teraz!">
+    <meta name="keywords"
+        content="kawa, kawiarnia, Concrete Caffee, lokalna kawiarnia, Kraków, menu kawiarni, menu specials, autumn, desery, świeżo palona kawa, przytulna atmosfera, relaks przy kawie, kawa na wynos, spotkania towarzyskie, pyszna kawa, nowoczesne wnętrze, najlepsza kawa w mieście, cafe, coffee, latte, espresso, macchiato, flat white, americano">
+    <meta property="og:title" content="Concrete Coffee | Wyjątkowa Kawiarnia">
+    <meta property="og:description"
+        content="Odwiedź Concrete Coffee i skosztuj najlepszej kawy w wyjątkowej atmosferze. Świeże wypieki i relaks czekają na Ciebie.">
+    <meta property="og:url" content="https://nawratka.github.io/concreteCaffee/">
+    <meta property="og:image" content="https://nawratka.github.io/concreteCaffee/img/herobg2.jpg">
+
+    <meta name="author" content="Kamila">
+
+    <link rel="canonical" href="http://localhost/concrete5/index.php/concrete-coffee">
     <link rel="icon" href="./img/faviconConcrete.png">
 
     <link href="./css/frontend_002.css" rel="stylesheet" type="text/css" media="all">
     <link href="./css/frontend_003.css" rel="stylesheet" type="text/css" media="all">
     <link href="./css/frontend.css" rel="stylesheet" type="text/css" media="all">
     <link href="./css/css2.css" rel="stylesheet">
-
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-    
-    
     <link rel="stylesheet" href="./css/primary.css">
-    <title>ConcreteCoffee - Caffe & Bakery</title>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
 </head>
 
 <body>
@@ -50,12 +57,12 @@
                             <span></span>
                         </div>
                         <nav class="nav">
-                            <ol class="main-nav-list">
+                            <ul class="main-nav-list">
                                 <li><a class="main-nav-item" href="#about">Poznaj nas</a></li>
                                 <li><a class="main-nav-item" href="#menu">Menu</a></li>
                                 <li><a class="main-nav-item" href="#testi">Opinie</a></li>
                                 <li><a class="main-nav-item" href="#contact">Kontakt</a></li>
-                            </ol>
+                            </ul>
                         </nav>
 
                         <a href="#map" class="header-btn header-btn-first">Dojazd</a>
@@ -122,15 +129,18 @@
                         </div>
                         <div class="about-left">
                             <div class="ccm-custom-style-container ccm-custom-style-aboutleft-270">
-                                <p style="text-align: left;">Nasza kawiarnia to miejsce stworzone z pasji do kawy i
+                                <p>Nasza kawiarnia to miejsce stworzone z pasji do kawy i
                                     miłości do dobrego smaku. Oferujemy <strong>starannie wyselekcjonowane
                                         ziarna</strong> z różnych zakątków świata, które zamieniamy w aromatyczne
                                     napoje, idealne na każdą chwilę.</p>
                             </div>
-                            <p style="text-align: left;"><strong>POLECAM SZCZEGÓLNIE ESPRESSO –
-                                    PEŁNE SMAKU I GŁĘBI, IDEALNE NA SZYBKI ZASTRZYK ENERGII. KAŻDA
-                                    FILIŻANKA TO DLA MNIE OKAZJA, BY PODZIELIĆ SIĘ Z WAMI PASJĄ DO KAWY!</strong></p>
-                            <p>Maciej, Barista</p>
+                            <blockquote>
+                                <p><strong>POLECAM SZCZEGÓLNIE ESPRESSO –
+                                        PEŁNE SMAKU I GŁĘBI, IDEALNE NA SZYBKI ZASTRZYK ENERGII. KAŻDA
+                                        FILIŻANKA TO DLA MNIE OKAZJA, BY PODZIELIĆ SIĘ Z WAMI PASJĄ DO KAWY!</strong>
+                                </p>
+                                <p>Maciej, Barista</p>
+                            </blockquote>
                         </div>
                         <div class="about-right">
                             <div class="bg"></div>
@@ -227,14 +237,14 @@
                         <p>COFFEE &amp; BAKERY</p>
                     </div>
                     <div class="menu-box smaller-block-width">
-                        <ol>
+                        <ul>
                             <li>Espresso.............7zł</li>
                             <li>Double Espresso.....10zł</li>
                             <li>Americano...........10zł</li>
                             <li>Flat White..........12zł</li>
                             <li>Cappuccino..........12zł</li>
-                            <li>Latte Machiatto.....15zł</li>
-                        </ol>
+                            <li>Latte Macchiato.....15zł</li>
+                        </ul>
                     </div>
                     <!-- =============== TURNING CIRCLE =============== -->
                     <div class="circle">
@@ -309,7 +319,7 @@
                         </svg>
                     </div>
                     <div class="testi-box max-block-width">
-                        <div class="testi1">
+                        <blockquote class="testi1">
                             <div class="ccm-block-testimonial-wrapper">
                                 <div class="ccm-block-testimonial">
                                     <div class="ccm-block-testimonial-quote">
@@ -323,9 +333,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </blockquote>
 
-                        <div class="testi2">
+                        <blockquote class="testi2">
                             <div class="ccm-block-testimonial-wrapper">
                                 <div class="ccm-block-testimonial">
                                     <div class="ccm-block-testimonial-quote">
@@ -339,9 +349,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </blockquote>
 
-                        <div class="testi3">
+                        <blockquote class="testi3">
                             <div class="ccm-block-testimonial-wrapper">
                                 <div class="ccm-block-testimonial">
                                     <div class="ccm-block-testimonial-quote">
@@ -355,9 +365,9 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </blockquote>
 
-                        <div class="testi4">
+                        <blockquote class="testi4">
                             <div class="ccm-block-testimonial-wrapper">
                                 <div class="ccm-block-testimonial">
                                     <div class="ccm-block-testimonial-quote">
@@ -370,7 +380,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </blockquote>
                     </div>
                 </section>
 
@@ -397,17 +407,17 @@
                     </div>
                     <!-- =============== NAV =============== -->
                     <nav>
-                        <ol class="main-nav-list">
+                        <ul class="main-nav-list">
                             <li><a class="main-nav-item" href="#about">Poznaj nas</a></li>
                             <li><a class="main-nav-item" href="#menu">Menu</a></li>
                             <li><a class="main-nav-item" href="#testi">Opinie</a></li>
                             <li><a class="main-nav-item" href="#contact">Kontakt</a></li>
-                        </ol>
+                        </ul>
                     </nav>
                     <div class="socials">
                         <a href="http://twitter.com/" class="socials-icon" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="#ffffff" stroke="#ffffff" stroke-width="1" stroke-linecap="round"
+                                fill="#ffa500" stroke="#ffa500" stroke-width="1" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-twitter">
                                 <path
                                     d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
@@ -415,13 +425,13 @@
                             </svg></a>
                         <a href="http://facebook.com/" class="socials-icon" style="margin-inline: 20px;"
                             target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="#ffffff" stroke="#ffffff" stroke-width="1"
+                                viewBox="0 0 24 24" fill="#ffa500" stroke="#ffa500" stroke-width="1"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg></a>
                         <a href="http://instagram.com/" class="socials-icon" target="_blank"><svg
                                 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"
+                                fill="none" stroke="#ffa500" stroke-width="3" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-instagram">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -434,6 +444,7 @@
         </div>
     </div>
     <script src="./main.js" type="text/javascript"></script>
+
 </body>
 
 </html>

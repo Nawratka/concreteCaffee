@@ -1,7 +1,5 @@
 'use strict';
 
-const menuItems = document.querySelectorAll('.menu-item');
-const price = document.querySelectorAll('.price');
 const circleText = document.querySelector('.circle .text');
 const burgerBtn = document.querySelector('#nav-burger');
 const headerNav = document.querySelector('.nav');
@@ -31,17 +29,6 @@ miniLogo.addEventListener('click', (e) => {
 	if (!e.target.classList.contains('logo-mini-link')) return;
 	burgerBtn.classList.remove('open');
 	headerNav.classList.remove('open');
-});
-
-// DOTS IN MENU ITEM IN MENU SECTION
-menuItems.forEach((item, i) => {
-	if (i === 0) {
-		item.parentElement.innerText =
-			item.textContent.padEnd(21, '.') + price[i].textContent;
-		return;
-	}
-	item.parentElement.innerText =
-		item.textContent.padEnd(20, '.') + price[i].textContent;
 });
 
 // TURNING TEXT IN MENU SECTION
@@ -87,6 +74,6 @@ const customIcon = L.icon({
 const marker = L.marker([50.0849, 19.9718], { icon: customIcon }).addTo(map);
 marker
 	.bindPopup(
-		'<b>Hello! Tu jesteśmy</b><br>Concrete CAFFE & BAKERY<hr>Codziennie 6 - 17'
+		'<b>Hello! Tu jesteśmy</b><br>Concrete COFFEE & BAKERY<hr>Codziennie 6 - 17'
 	)
 	.openPopup();
